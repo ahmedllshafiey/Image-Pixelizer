@@ -34,6 +34,8 @@ public class MainWindow extends JFrame {
 
         // Panels for images
         JPanel imagePanel = new JPanel(new GridLayout(1, 2));
+        imagePanel.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        imagePanel.setBackground(java.awt.Color.LIGHT_GRAY);
         originalLabel = new JLabel("", JLabel.CENTER);
         pixelatedLabel = new JLabel("", JLabel.CENTER);
         imagePanel.add(originalLabel);
